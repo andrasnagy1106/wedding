@@ -1,64 +1,42 @@
 import { useEffect, useRef, useState } from 'react'
 import './FunCounters.css'
 
-// Lagzi kezdete: 2026.05.30. 19:00
-const PARTY_START = new Date('2026-05-30T19:00:00')
-
-function getElapsedMinutes() {
-  const now = new Date()
-  const diff = now - PARTY_START
-  return diff > 0 ? diff / 60000 : 0
-}
-
 const counters = [
   {
     emoji: '🥃',
     label: 'Megivott feles',
-    getValue: () => Math.floor(getElapsedMinutes() * 1.8),
+    base: 63,
+    increment: () => Math.floor(Math.random() * 3) + 1,
     suffix: 'db',
-    live: true,
   },
   {
     emoji: '😭',
     label: 'Örömkönny',
-    getValue: () => Math.floor(getElapsedMinutes() * 0.4),
+    base: 312,
+    increment: () => Math.floor(Math.random() * 8) + 3,
     suffix: 'csepp',
-    live: true,
   },
   {
     emoji: '💃',
     label: 'Tánclépés',
-    getValue: () => Math.floor(getElapsedMinutes() * 23),
+    base: 2847,
+    increment: () => Math.floor(Math.random() * 40) + 15,
     suffix: 'db',
-    live: true,
   },
   {
     emoji: '❤️',
     label: 'Kimondott fogadalmi szó',
-    getValue: () => 2,
+    base: 2,
+    increment: () => 0,
     suffix: 'db',
-    live: false,
-  },
-  {
-    emoji: '🎂',
-    label: 'Elfogyasztott sütemény',
-    getValue: () => Math.floor(getElapsedMinutes() * 0.9),
-    suffix: 'db',
-    live: true,
-  },
-  {
-    emoji: '🥂',
-    label: 'Koccintás',
-    getValue: () => Math.floor(getElapsedMinutes() * 2.1),
-    suffix: 'db',
-    live: true,
   },
 ]
 
-function AnimatedCounter({ getValue, suffix, live }) {
-  const [display, setDisplay] = useState(0)
+function AnimatedCounter({ base, increment, suffix }) {
+  const [value, setValue] = useState(0)
   const [started, setStarted] = useState(false)
   const ref = useRef(null)
+  const currentRef = useRef(base)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -69,44 +47,34 @@ function AnimatedCounter({ getValue, suffix, live }) {
     return () => observer.disconnect()
   }, [])
 
+  // Animate count-up to base on first appear
   useEffect(() => {
     if (!started) return
-    const target = getValue()
-
-    if (target === 0) {
-      // Wedding not started yet – count up to a teaser number then back
-      let frame = 0
-      const id = setInterval(() => {
-        frame++
-        setDisplay(Math.floor(Math.random() * 999))
-        if (frame > 20) { clearInterval(id); setDisplay('?') }
-      }, 60)
-      return () => clearInterval(id)
-    }
-
-    // Animate count-up
-    const duration = 1200
-    const steps = 40
-    const increment = target / steps
-    let current = 0
+    const steps = 35
+    const duration = 1000
+    let step = 0
     const id = setInterval(() => {
-      current = Math.min(current + increment, target)
-      setDisplay(Math.floor(current))
-      if (current >= target) clearInterval(id)
+      step++
+      setValue(Math.floor((base / steps) * step))
+      if (step >= steps) { setValue(base); clearInterval(id) }
     }, duration / steps)
     return () => clearInterval(id)
   }, [started])
 
-  // Live update every 30s
+  // Increment every 10 seconds
   useEffect(() => {
-    if (!live || !started) return
-    const id = setInterval(() => setDisplay(getValue()), 30000)
+    if (!started) return
+    const id = setInterval(() => {
+      const inc = increment()
+      currentRef.current += inc
+      setValue(currentRef.current)
+    }, 10000)
     return () => clearInterval(id)
-  }, [live, started])
+  }, [started])
 
   return (
     <span ref={ref} className="counter-value">
-      {display === '?' ? '🎉' : display.toLocaleString('hu-HU')}
+      {value.toLocaleString('hu-HU')}
       <span className="counter-suffix"> {suffix}</span>
     </span>
   )
@@ -121,7 +89,7 @@ export default function FunCounters() {
         {counters.map((c, i) => (
           <div className="fun-counter-card" key={i}>
             <div className="fun-counter-emoji">{c.emoji}</div>
-            <AnimatedCounter getValue={c.getValue} suffix={c.suffix} live={c.live} />
+            <AnimatedCounter base={c.base} increment={c.increment} suffix={c.suffix} />
             <div className="fun-counter-label">{c.label}</div>
           </div>
         ))}

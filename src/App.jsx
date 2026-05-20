@@ -1,5 +1,6 @@
 import './App.css'
 import LiturgyViewer from './LiturgyViewer'
+import CookieConsent from './CookieConsent'
 
 const schedule = [
   { time: '14:00', label: 'Szobák elfoglalása' },
@@ -141,6 +142,7 @@ const drinks = [
 export default function App() {
   return (
     <div className="page">
+      <CookieConsent />
 
       {/* Dekoratív felső sarok */}
       <div className="corner corner-tl" />

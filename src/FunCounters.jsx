@@ -68,7 +68,7 @@ function AnimatedCounter({ base, increment, suffix }) {
       const inc = increment()
       currentRef.current += inc
       setValue(currentRef.current)
-    }, 10000)
+    }, 3000)
     return () => clearInterval(id)
   }, [started])
 

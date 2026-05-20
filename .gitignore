@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.env
+.env.local
+
+# Csak a gyökérben lévő eredeti fájlok (a /public-ba már be vannak másolva)
+/*.pdf
+/IMG_5369.jpg
+
+# Temp script
+/readpdf.cjs
+package-lock.json

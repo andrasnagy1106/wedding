@@ -458,6 +458,28 @@
   line-height: 2;
 }
 
+/* ── Gyereksarok ── */
+.kids-section {
+  background: linear-gradient(135deg, #f8f4e8 0%, #eef5e8 100%);
+  border: 1px solid #c8d8b0;
+  border-radius: 16px;
+  padding: 36px 32px;
+}
+
+.kids-emoji-row {
+  font-size: 1.8rem;
+  margin-bottom: 14px;
+  letter-spacing: 6px;
+}
+
+.kids-text {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: #4a5a36;
+  line-height: 1.9;
+}
+
 /* ── Szállás ── */
 .accommodation-box {
   max-width: 500px;

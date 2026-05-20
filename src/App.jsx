@@ -321,6 +321,19 @@ export default function App() {
 
       <Divider />
 
+      {/* ── Gyereksarok ── */}
+      <section className="section kids-section">
+        <div className="kids-emoji-row">🧸 🎨 🪀 🎲 🖍️</div>
+        <h2 className="section-title">Gyereksarok</h2>
+        <p className="kids-text">
+          A legkisebbekre is gondoltunk! 🤍<br />
+          Készültünk pár apró játékkal és meglepetéssel,<br />
+          hogy a gyerekek is jól érezzék magukat.
+        </p>
+      </section>
+
+      <Divider />
+
       {/* ── Szállás ── */}
       <section className="section">
         <h2 className="section-title">Szállás</h2>
@@ -353,6 +366,7 @@ export default function App() {
           <ul className="acc-info-list">
             <li>Az ágyakat nem lehet mozgatni.</li>
             <li>A szobákban törölközők rendelkezésre állnak, tusfürdőről azonban érdemes gondoskodni.</li>
+            <li>📶 A helyszínen a térerő elég gyenge, érdemes erre felkészülni.</li>
             <li>A fizetési lehetőségekről és az adatok bekéréséről később értesítünk.</li>
             <li>🧒 A helyszín a szállás és reggeli árából <strong>12 év alatti gyermekeknek 30% kedvezményt</strong> biztosít. <strong>3 év alatti gyermekek</strong> számára ezek a szolgáltatások <strong>díjmentesek</strong>.</li>
           </ul>

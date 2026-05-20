@@ -127,6 +127,32 @@
   transform: scaleX(-1);
 }
 
+.social-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+  justify-content: center;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #f5f0e0;
+  border: 1px solid #d4c88a;
+  color: #5a7a4a;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.social-link:hover {
+  background: #5a7a4a;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
 /* ── Helyszín térkép ── */
 .venue-map-section {
   text-align: center;

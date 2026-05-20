@@ -206,7 +206,11 @@ export default function App() {
           <div className="location-card">
             <div className="location-icon">🥂</div>
             <h3>Rendezvény helyszín</h3>
-            <p className="location-name">Nairam Rendezvényközpont – Szellőpalota</p>
+            <p className="location-name">
+              <a href="https://nairam.hu" target="_blank" rel="noopener noreferrer" className="location-name-link">
+                Nairam Rendezvényközpont – Szellőpalota
+              </a>
+            </p>
             <p className="location-address">Szolnok, Külterület 096/8, 5081</p>
             <a
               className="map-link"

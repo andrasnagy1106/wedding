@@ -192,7 +192,11 @@ export default function App() {
           <div className="location-card">
             <div className="location-icon">⛪</div>
             <h3>Templomi szertartás</h3>
-            <p className="location-name">Szajoli Református Templom</p>
+            <p className="location-name">
+              <a href="https://www.facebook.com/szajoli.reformatusok/" target="_blank" rel="noopener noreferrer" className="location-name-link">
+                Szajoli Református Templom
+              </a>
+            </p>
             <p className="location-address">5081 Szajol, Szent István király út 84.</p>
             <a
               className="map-link"

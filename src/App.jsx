@@ -326,9 +326,8 @@ export default function App() {
         <div className="kids-emoji-row">🧸 🎨 🪀 🎲 🖍️</div>
         <h2 className="section-title">Gyereksarok</h2>
         <p className="kids-text">
-          A legkisebbekre is gondoltunk! 🤍<br />
           Készültünk pár apró játékkal és meglepetéssel,<br />
-          hogy a gyerekek is jól érezzék magukat.
+          hogy a gyerekek is jól érezzék magukat. 🤍
         </p>
       </section>
 

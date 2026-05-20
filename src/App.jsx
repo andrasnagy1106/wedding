@@ -346,7 +346,7 @@ export default function App() {
             <li>Az ágyakat nem lehet mozgatni.</li>
             <li>A szobákban törölközők rendelkezésre állnak, tusfürdőről azonban érdemes gondoskodni.</li>
             <li>A fizetési lehetőségekről és az adatok bekéréséről később értesítünk.</li>
-            <li>🧒 A helyszín a szállás, reggeli és pezsgős koccintás árából <strong>12 év alatti gyermekeknek 30% kedvezményt</strong> biztosít. <strong>3 év alatti gyermekek</strong> számára ezek a szolgáltatások <strong>díjmentesek</strong>.</li>
+            <li>🧒 A helyszín a szállás és reggeli árából <strong>12 év alatti gyermekeknek 30% kedvezményt</strong> biztosít. <strong>3 év alatti gyermekek</strong> számára ezek a szolgáltatások <strong>díjmentesek</strong>.</li>
           </ul>
 
           <div className="accommodation-breakfast">

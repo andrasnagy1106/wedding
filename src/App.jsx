@@ -263,6 +263,7 @@ export default function App() {
       {/* ── Menü ── */}
       <section className="section">
         <h2 className="section-title">Ünnepi menü</h2>
+        <p className="menu-serving-note">🍽 A pörkölt és a sültek egyszerre kerülnek tálalásra.</p>
         <div className="menu-grid">
           {menu.map((block, i) => (
             <div className="menu-block" key={i}>

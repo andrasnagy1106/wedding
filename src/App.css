@@ -359,6 +359,14 @@
   text-align: left;
 }
 
+.menu-serving-note {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 0.92rem;
+  color: #6b6b50;
+  margin-bottom: 24px;
+}
+
 /* ── Menü ── */
 .menu-grid {
   display: grid;

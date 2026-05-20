@@ -1,6 +1,7 @@
 import './App.css'
 import LiturgyViewer from './LiturgyViewer'
 import CookieConsent from './CookieConsent'
+import FunCounters from './FunCounters'
 
 const schedule = [
   { time: '14:00', label: 'Szobák elfoglalása' },
@@ -395,6 +396,10 @@ export default function App() {
           </div>
         </div>
       </section>
+
+      <Divider />
+
+      <FunCounters />
 
       <Divider />
 

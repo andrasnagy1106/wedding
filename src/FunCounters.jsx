@@ -5,7 +5,7 @@ const counters = [
   {
     emoji: '🥃',
     label: 'Megivott feles',
-    base: 63,
+    base: 1400,
     increment: () => Math.floor(Math.random() * 3) + 1,
     suffix: 'db',
   },

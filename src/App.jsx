@@ -67,8 +67,8 @@ const menu = [
   {
     category: 'Mártások',
     items: [
-      'Tejszínes zöldfűszeres mártás (szárnyas ételekhez ajánljuk)',
-      'Édes-chili mártás (bundázott és vegetáriánus ételekhez ajánljuk)',
+      'Tejszínes zöldfűszeres mártás',
+      'Édes-chili mártás',
     ],
   },
   {

@@ -123,8 +123,7 @@ const drinks = [
     category: 'Röviditalok',
     items: [
       'Whiskey – Jameson',
-      'Unicum Narancs',
-      'Unicum Szilva',
+      'Unicum – Narancs, Szilva',
       'Pálinka – szilva, szőlő, mézes',
       'Berentzen – alma, rebarbara-eper',
       'Vodka – Finlandia',

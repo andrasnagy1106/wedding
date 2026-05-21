@@ -134,8 +134,8 @@ const drinks = [
     ],
   },
   {
-    category: 'Koktélok',
-    items: ['Aperol Spritz'],
+    category: 'Long drink',
+    items: ['Aperol Spritz', 'Cuba Libre', 'Gin-tonic', 'Vodka-szóda', 'Vodka-narancs', 'Whiskey-kóla'],
   },
 ]
 

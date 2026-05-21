@@ -136,7 +136,7 @@ const drinks = [
   },
   {
     category: 'Long drinkek',
-    items: ['Aperol Spritz', 'Cuba Libre', 'Gin-tonic', 'Vodka-szóda', 'Vodka-narancs', 'Whiskey-kóla'],
+    items: ['Aperol Spritz', 'Cuba Libre', 'Gin-tonic', 'Vodka-szóda', 'Vodka-narancs', 'Whiskey-cola'],
   },
 ]
 

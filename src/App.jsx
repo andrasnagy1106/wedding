@@ -1,4 +1,5 @@
 import './App.css'
+import { Analytics } from '@vercel/analytics/react'
 import LiturgyViewer from './LiturgyViewer'
 import CookieConsent from './CookieConsent'
 import FunCounters from './FunCounters'
@@ -467,6 +468,7 @@ export default function App() {
       <footer className="footer">
         <p>Anna &amp; Andris • 2026. május 30.</p>
       </footer>
+      <Analytics />
     </div>
   )
 }

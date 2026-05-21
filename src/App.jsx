@@ -379,7 +379,7 @@ export default function App() {
             <li>A szobákban törölközők rendelkezésre állnak, tusfürdőről azonban érdemes gondoskodni.</li>
             <li>📶 A helyszínen a térerő elég gyenge, érdemes erre felkészülni.</li>
             <li>💳 Fizetési lehetőségek: készpénz, bankkártya és SZÉP-kártya.</li>
-            <li>A szálláshoz szükséges személyes adataitokat egy kicsit később fogjuk bekérni – időben értesítünk.</li>
+            <li>A szálláshoz szükséges személyes adataitokat egy kicsit később fogjuk bekérni.</li>
             <li>🧒 A helyszín a szállás és reggeli árából <strong>12 év alatti gyermekeknek 30% kedvezményt</strong> biztosít. <strong>3 év alatti gyermekek</strong> számára ezek a szolgáltatások <strong>díjmentesek</strong>.</li>
           </ul>
 

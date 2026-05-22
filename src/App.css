@@ -437,6 +437,12 @@
   line-height: 1.4;
 }
 
+.menu-note-inline {
+  font-size: 0.82rem;
+  color: #9a8c60;
+  font-style: italic;
+}
+
 .menu-items {
   list-style: none;
   padding: 0;

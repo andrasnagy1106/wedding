@@ -301,6 +301,22 @@ export default function App() {
 
       <Divider />
 
+      {/* ── Éjféli menü ── */}
+      <section className="section">
+        <h2 className="section-title">Éjféli menü</h2>
+        <div className="menu-grid">
+          <div className="menu-block midnight-menu">
+            <ul className="menu-items">
+              <li>Mini töltött káposzta tejföllel</li>
+              <li>Csirkés caesar wrap</li>
+              <li>Sajtkoktél <span className="menu-note-inline">(ötféle sajt, gyümölccsel, ropogóssal együtt tálalva)</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <Divider />
+
       {/* ── Italok ── */}
       <section className="section">
         <h2 className="section-title">Italok</h2>

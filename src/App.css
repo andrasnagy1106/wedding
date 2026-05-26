@@ -734,6 +734,61 @@
   margin: 0;
 }
 
+.goodid-app-hint {
+  margin-bottom: 16px;
+}
+
+.goodid-app-hint-text {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.82rem;
+  color: #6a7a5a;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.goodid-store-badges {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.store-badge-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #1a1a1a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-family: 'Lato', sans-serif;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.store-badge-btn:hover {
+  background: #333;
+  transform: translateY(-1px);
+}
+
+.store-badge-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.store-badge-sub {
+  font-size: 0.65rem;
+  opacity: 0.8;
+  letter-spacing: 0.02em;
+}
+
+.store-badge-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+
 .accommodation-breakfast {
   background: linear-gradient(135deg, #fffef8 0%, #f5f0e0 100%);
   border: 1px solid #d4c88a;

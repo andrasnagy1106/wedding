@@ -432,6 +432,37 @@ export default function App() {
             >
               Adatok megadása a GoodID-ban ↗
             </a>
+            <div className="goodid-app-hint">
+              <p className="goodid-app-hint-text">Ha a link nem működik, először töltsd le az alkalmazást:</p>
+              <div className="goodid-store-badges">
+                <a
+                  className="store-badge-btn"
+                  href="https://apps.apple.com/app/goodid/id1438921026"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Letöltés az App Store-ból"
+                >
+                  <AppStoreIcon />
+                  <span className="store-badge-text">
+                    <span className="store-badge-sub">Letöltés az</span>
+                    <span className="store-badge-name">App Store</span>
+                  </span>
+                </a>
+                <a
+                  className="store-badge-btn"
+                  href="https://play.google.com/store/apps/details?id=net.goodid.wallet"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Letöltés a Google Play-ből"
+                >
+                  <GooglePlayIcon />
+                  <span className="store-badge-text">
+                    <span className="store-badge-sub">Letöltés a</span>
+                    <span className="store-badge-name">Google Play</span>
+                  </span>
+                </a>
+              </div>
+            </div>
             <div className="goodid-fields">
               <p className="goodid-fields-label">Az alábbi adatokat szükséges megadni:</p>
               <ul className="goodid-fields-list">
@@ -565,6 +596,22 @@ function ViberIcon() {
   return (
     <svg width="16" height="16" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style={{display:'inline',verticalAlign:'middle',marginRight:'3px'}}>
       <path d="M16 2C8.82 2 3 7.38 3 14c0 3.9 1.9 7.38 4.88 9.72L7 30l6.18-2.1C14.07 28.27 15.02 28.4 16 28.4c7.18 0 13-5.38 13-12.4S23.18 2 16 2zm0 22.4c-.9 0-1.78-.12-2.62-.34l-.44-.12-3.66 1.24.7-3.54-.28-.4C7.72 19.6 6.2 16.9 6.2 14c0-5.4 4.4-9.8 9.8-9.8s9.8 4.4 9.8 9.8-4.4 9.8-9.8 9.8zm5.36-7.34c-.28-.14-1.68-.84-1.94-.94-.26-.1-.46-.14-.66.14-.2.28-.76.94-.92 1.12-.18.2-.34.22-.62.08-.28-.14-1.2-.44-2.28-1.42-.84-.74-1.4-1.66-1.56-1.94-.18-.28-.02-.44.12-.58.14-.12.28-.34.42-.52.14-.16.18-.28.28-.46.1-.2.04-.36-.02-.5-.08-.14-.66-1.6-.9-2.18-.24-.58-.48-.5-.66-.5h-.56c-.2 0-.52.06-.78.36-.28.28-1.04 1-1.04 2.46s1.06 2.86 1.22 3.06c.14.2 2.1 3.2 5.08 4.48.7.3 1.26.48 1.68.62.7.22 1.34.18 1.84.1.56-.08 1.74-.7 1.98-1.38.24-.68.24-1.26.18-1.38-.08-.14-.28-.22-.56-.36z"/>
+    </svg>
+  )
+}
+
+function AppStoreIcon() {
+  return (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+    </svg>
+  )
+}
+
+function GooglePlayIcon() {
+  return (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M3.18 23.76c.3.16.64.2.98.1l12.53-7.23-2.8-2.8-10.71 9.93zM.54 1.1C.2 1.46 0 2.02 0 2.73v18.54c0 .71.2 1.27.54 1.63l.09.08 10.39-10.39v-.24L.63 1.02.54 1.1zM20.3 10.27l-2.98-1.72-3.13 3.13 3.13 3.13 3-.73c.85-.49.85-1.29 0-1.78l-3-1.73.98-1.1zM3.18.24l12.53 7.23-2.8 2.8L3.18.24z"/>
     </svg>
   )
 }

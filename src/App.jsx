@@ -437,7 +437,7 @@ export default function App() {
               <div className="goodid-store-badges">
                 <a
                   className="store-badge-btn"
-                  href="https://apps.apple.com/app/goodid/id1438921026"
+                  href="https://apps.apple.com/hu/app/goodid-strong-authentication/id1072149515"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Letöltés az App Store-ból"
@@ -450,7 +450,7 @@ export default function App() {
                 </a>
                 <a
                   className="store-badge-btn"
-                  href="https://play.google.com/store/apps/details?id=net.goodid.wallet"
+                  href="https://play.google.com/store/apps/details?id=com.idandtrust.goodid"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Letöltés a Google Play-ből"

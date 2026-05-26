@@ -396,9 +396,27 @@ export default function App() {
             <li>A szobákban törölközők rendelkezésre állnak, tusfürdőről azonban érdemes gondoskodni.</li>
             <li>📶 A helyszínen a térerő elég gyenge, érdemes erre felkészülni.</li>
             <li>💳 Fizetési lehetőségek: készpénz, bankkártya és SZÉP-kártya.</li>
-            <li>🚗 A parkolók az 1-es kapun áthaladva érhetőek el.</li>
             <li>🧒 A helyszín a szállás és reggeli árából <strong>12 év alatti gyermekeknek 30% kedvezményt</strong> biztosít. <strong>3 év alatti gyermekek</strong> számára ezek a szolgáltatások <strong>díjmentesek</strong>.</li>
           </ul>
+
+          <div className="venue-access-box">
+            <div className="venue-access-item">
+              <h4 className="venue-access-title">🚧 Be- és kijutás</h4>
+              <ul className="venue-access-list">
+                <li>Az esküvő napján kb. <strong>13:30-tól</strong> nyitjuk ki a kapukat, amelyet a szertartást követően biztonsági okokból bezárunk.</li>
+                <li>Másnap reggel <strong>8:00-tól</strong> nyitjuk ki újra a kapukat.</li>
+                <li>Kijutás esetén a főkapu mellett lévő <strong>kódot beírva</strong> lehet kijutni.</li>
+              </ul>
+            </div>
+            <div className="venue-access-item">
+              <h4 className="venue-access-title">🅿️ Parkolás</h4>
+              <ul className="venue-access-list">
+                <li>Első körben a <strong>Harmat teremnél lévő 1-es és 2-es parkoló</strong> áll rendelkezésre – a <strong>Főkapun (1-es kapu)</strong> megközelíthető.</li>
+                <li>Ha ezek megtelnek, megnyitjuk a <strong>Szellőpalotánál lévő 3-as parkolót</strong> – a <strong>2-es kapun</strong> keresztül érhető el.</li>
+                <li>⚡ Elektromos autók töltésére sajnos nincs lehetőség.</li>
+              </ul>
+            </div>
+          </div>
 
           <div className="goodid-checkin">
             <h3 className="goodid-title">📋 Szobakulcsátvétel – személyes adatok</h3>

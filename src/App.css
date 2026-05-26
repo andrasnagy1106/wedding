@@ -614,6 +614,43 @@
   margin-bottom: 20px;
 }
 
+/* ── Venue access / parking ── */
+.venue-access-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+@media (max-width: 560px) {
+  .venue-access-box {
+    grid-template-columns: 1fr;
+  }
+}
+
+.venue-access-item {
+  background: #f5f8f0;
+  border: 1px solid #b8d098;
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+
+.venue-access-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.92rem;
+  color: #3d5c2a;
+  margin-bottom: 8px;
+}
+
+.venue-access-list {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.86rem;
+  color: #3a4a2a;
+  line-height: 1.6;
+  padding-left: 16px;
+  margin: 0;
+}
+
 /* ── GoodID ── */
 .goodid-checkin {
   background: linear-gradient(135deg, #f0f7eb 0%, #e8f4e0 100%);

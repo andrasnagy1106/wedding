@@ -396,9 +396,39 @@ export default function App() {
             <li>A szobákban törölközők rendelkezésre állnak, tusfürdőről azonban érdemes gondoskodni.</li>
             <li>📶 A helyszínen a térerő elég gyenge, érdemes erre felkészülni.</li>
             <li>💳 Fizetési lehetőségek: készpénz, bankkártya és SZÉP-kártya.</li>
-            <li>A szálláshoz szükséges személyes adataitokat egy kicsit később fogjuk bekérni.</li>
+            <li>🚗 A parkolók az 1-es kapun áthaladva érhetőek el.</li>
             <li>🧒 A helyszín a szállás és reggeli árából <strong>12 év alatti gyermekeknek 30% kedvezményt</strong> biztosít. <strong>3 év alatti gyermekek</strong> számára ezek a szolgáltatások <strong>díjmentesek</strong>.</li>
           </ul>
+
+          <div className="goodid-checkin">
+            <h3 className="goodid-title">📋 Szobakulcsátvétel – személyes adatok</h3>
+            <p className="goodid-intro">
+              A gördülékenyebb szobakulcsátvétel érdekében kérjük, küldje el személyes adatait
+              egyszerűen és biztonságosan a <strong>GoodID alkalmazás</strong> segítségével!
+            </p>
+            <a
+              className="goodid-link-btn"
+              href="https://app.goodid.net/s/cHGBXl3zZI7BxTnv"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Adatok megadása a GoodID-ban ↗
+            </a>
+            <div className="goodid-fields">
+              <p className="goodid-fields-label">Az alábbi adatokat szükséges megadni:</p>
+              <ul className="goodid-fields-list">
+                <li><strong>Érkezés dátuma:</strong> 2026. május 30.</li>
+                <li><strong>Foglalási azonosító</strong> <span className="goodid-hint">(a helyszíntől kapott)</span></li>
+                <li><strong>Foglalási név</strong></li>
+                <li><strong>E-mail cím</strong></li>
+                <li><strong>Telefonszám</strong></li>
+                <li><strong>Lakcím</strong></li>
+                <li><strong>Gépjármű rendszáma</strong></li>
+                <li><strong>További vendégek adatai</strong> <span className="goodid-hint">(egy családon belül több szállóvendég esetén érdemes hozzáadni)</span></li>
+              </ul>
+            </div>
+            <p className="goodid-note">* A személyazonosság ellenőrzéséhez az okmányadatokon túl szelfit is kérnek.</p>
+          </div>
 
           <div className="accommodation-breakfast">
             <h3 className="accommodation-subtitle">Büféreggeli <span className="optional-tag">opcionális • 4 400 Ft / fő</span></h3>

@@ -418,8 +418,8 @@ export default function App() {
               <p className="goodid-fields-label">Az alábbi adatokat szükséges megadni:</p>
               <ul className="goodid-fields-list">
                 <li><strong>Érkezés dátuma:</strong> 2026. május 30.</li>
-                <li><strong>Foglalási azonosító</strong> <span className="goodid-hint">(a helyszíntől kapott)</span></li>
-                <li><strong>Foglalási név</strong></li>
+                <li><strong>Foglalási azonosító:</strong> 539</li>
+                <li><strong>Foglalási név:</strong> Kiss Anna</li>
                 <li><strong>E-mail cím</strong></li>
                 <li><strong>Telefonszám</strong></li>
                 <li><strong>Lakcím</strong></li>

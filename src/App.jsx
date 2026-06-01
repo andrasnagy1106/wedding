@@ -531,14 +531,15 @@ export default function App() {
           </div>
           <div className="photos-selfie-box">
             <p className="photos-selfie-text">🎬 Vőfény videó:</p>
-            <a
-              className="photos-selfie-link"
-              href="https://drive.google.com/file/d/1Qu2CNRrmg3UG-XdjETe241QcfpPs6z9x/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Videó megtekintése
-            </a>
+            <div className="photos-video-wrapper">
+              <iframe
+                src="https://drive.google.com/file/d/1Qu2CNRrmg3UG-XdjETe241QcfpPs6z9x/preview"
+                className="photos-video-iframe"
+                allow="autoplay"
+                allowFullScreen
+                title="Vőfény videó"
+              />
+            </div>
           </div>
           <div className="photos-share">
             <p className="photos-share-text">

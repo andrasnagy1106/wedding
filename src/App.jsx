@@ -529,6 +529,17 @@ export default function App() {
               Szelfiboxos képek megtekintése
             </a>
           </div>
+          <div className="photos-selfie-box">
+            <p className="photos-selfie-text">🎬 Vőfény videó:</p>
+            <a
+              className="photos-selfie-link"
+              href="https://drive.google.com/file/d/1Qu2CNRrmg3UG-XdjETe241QcfpPs6z9x/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Videó megtekintése
+            </a>
+          </div>
           <div className="photos-share">
             <p className="photos-share-text">
               Ha nektek is készültek szép fotók vagy videók az esküvőn,<br />

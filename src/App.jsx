@@ -518,6 +518,17 @@ export default function App() {
           <div className="photos-icon">📷</div>
           <p className="photos-text">Az esküvői fotók hamarosan itt lesznek elérhetők.</p>
           <p className="photos-subtext">Gyere vissza később!</p>
+          <div className="photos-selfie-box">
+            <p className="photos-selfie-text">🤳 Szelfiboxos fotók:</p>
+            <a
+              className="photos-selfie-link"
+              href="https://fotoshare.co/e/IqmYln3ZCgNEPYcTlbd0U"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Szelfiboxos képek megtekintése
+            </a>
+          </div>
           <div className="photos-share">
             <p className="photos-share-text">
               Ha nektek is készültek szép fotók vagy videók az esküvőn,<br />

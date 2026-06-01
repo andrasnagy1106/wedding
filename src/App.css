@@ -884,6 +884,42 @@
   color: #8a6e1a;
 }
 
+.photos-selfie-box {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid #d4c88a;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.photos-selfie-text {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #6b6b50;
+  margin: 0;
+}
+
+.photos-selfie-link {
+  display: inline-block;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.95rem;
+  color: #fff;
+  background-color: #b8972a;
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 30px;
+  letter-spacing: 0.04em;
+  transition: background-color 0.2s;
+}
+
+.photos-selfie-link:hover {
+  background-color: #8a6e1a;
+}
+
 /* ── Kapcsolat ── */
 .contact-subtitle {
   font-family: 'Playfair Display', serif;

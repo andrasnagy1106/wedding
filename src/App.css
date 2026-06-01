@@ -920,6 +920,55 @@
   background-color: #8a6e1a;
 }
 
+.photos-guest-gallery {
+  width: 100%;
+  margin-top: 16px;
+}
+
+.photos-guest-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  color: #6b6b50;
+  margin-bottom: 14px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.photos-guest-gallery .react-photo-album--photo {
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.photos-guest-gallery .react-photo-album--photo:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+}
+
+.photos-coming-banner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 28px;
+  padding: 14px 22px;
+  background: #fdf8ee;
+  border: 1px solid #d4c88a;
+  border-radius: 12px;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #6b6b50;
+}
+
+.photos-coming-banner span {
+  font-size: 1.4rem;
+}
+
+.photos-coming-banner p {
+  margin: 0;
+}
+
 .photos-video-wrapper {
   width: 100%;
   max-width: 640px;

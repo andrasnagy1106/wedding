@@ -1,8 +1,32 @@
+import { useState } from 'react'
 import './App.css'
 import { Analytics } from '@vercel/analytics/react'
 import LiturgyViewer from './LiturgyViewer'
 import CookieConsent from './CookieConsent'
 import FunCounters from './FunCounters'
+import { MasonryPhotoAlbum } from 'react-photo-album'
+import 'react-photo-album/masonry.css'
+import Lightbox from 'yet-another-react-lightbox'
+import 'yet-another-react-lightbox/styles.css'
+
+const guestPhotos = [
+  { src: '/photos/1.jpg',  width: 1536, height: 2048 },
+  { src: '/photos/2.jpg',  width: 2048, height: 1536 },
+  { src: '/photos/3.jpg',  width: 1536, height: 2048 },
+  { src: '/photos/4.jpg',  width: 1536, height: 2048 },
+  { src: '/photos/5.jpg',  width: 1536, height: 2048 },
+  { src: '/photos/6.jpg',  width: 2048, height: 1536 },
+  { src: '/photos/7.jpg',  width: 1536, height: 2048 },
+  { src: '/photos/8.jpg',  width: 1290, height: 726  },
+  { src: '/photos/9.jpg',  width: 2048, height: 1536 },
+  { src: '/photos/10.jpg', width: 2048, height: 1536 },
+  { src: '/photos/11.jpg', width: 1290, height: 726  },
+  { src: '/photos/12.jpg', width: 1536, height: 2048 },
+  { src: '/photos/13.jpg', width: 1290, height: 726  },
+  { src: '/photos/14.jpg', width: 1152, height: 2047 },
+  { src: '/photos/15.jpg', width: 1536, height: 2048 },
+  { src: '/photos/16.jpg', width: 1014, height: 1801 },
+]
 
 const schedule = [
   { time: '14:00', label: 'Szobák elfoglalása' },
@@ -139,6 +163,26 @@ const drinks = [
     items: ['Aperol Spritz', 'Cuba Libre', 'Gin-tonic', 'Vodka-szóda', 'Vodka-narancs', 'Whiskey-cola'],
   },
 ]
+
+function GuestGallery() {
+  const [index, setIndex] = useState(-1)
+  return (
+    <>
+      <MasonryPhotoAlbum
+        photos={guestPhotos}
+        columns={(w) => (w < 500 ? 2 : w < 900 ? 3 : 4)}
+        onClick={({ index }) => setIndex(index)}
+      />
+      <Lightbox
+        open={index >= 0}
+        index={index}
+        close={() => setIndex(-1)}
+        slides={guestPhotos}
+        on={{ view: ({ index }) => setIndex(index) }}
+      />
+    </>
+  )
+}
 
 export default function App() {
   return (
@@ -516,8 +560,16 @@ export default function App() {
         <h2 className="section-title">Esküvői fotók</h2>
         <div className="photos-coming-soon">
           <div className="photos-icon">📷</div>
-          <p className="photos-text">Az esküvői fotók hamarosan itt lesznek elérhetők.</p>
-          <p className="photos-subtext">Gyere vissza később!</p>
+
+          <div className="photos-guest-gallery">
+            <h3 className="photos-guest-title">Ti küldtétek 🤍</h3>
+            <GuestGallery />
+          </div>
+
+          <div className="photos-coming-banner">
+            <span>📸</span>
+            <p>A profi fotók és további videók hamarosan érkeznek!</p>
+          </div>
           <div className="photos-selfie-box">
             <p className="photos-selfie-text">🤳 Szelfiboxos fotók:</p>
             <a

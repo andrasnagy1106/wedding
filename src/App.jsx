@@ -531,16 +531,14 @@ export default function App() {
           </div>
           <div className="photos-selfie-box">
             <p className="photos-selfie-text">🎬 Vőfény videó:</p>
-            <div className="photos-video-wrapper photos-video-portrait">
-              <iframe
-                src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fv%2F18gGdEsQoy%2F&show_text=false&width=267&t=0"
-                className="photos-video-iframe"
-                scrolling="no"
-                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                allowFullScreen
-                title="Vőfény videó"
-              />
-            </div>
+            <a
+              className="photos-selfie-link"
+              href="https://www.facebook.com/share/v/18gGdEsQoy/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Videó megtekintése
+            </a>
           </div>
           <div className="photos-share">
             <p className="photos-share-text">

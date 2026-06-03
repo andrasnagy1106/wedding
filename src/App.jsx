@@ -26,6 +26,9 @@ const guestPhotos = [
   { src: '/photos/14.jpg', width: 1152, height: 2047 },
   { src: '/photos/15.jpg', width: 1536, height: 2048 },
   { src: '/photos/16.jpg', width: 1014, height: 1801 },
+  { src: '/photos/17.jpg', width: 2048, height: 1536 },
+  { src: '/photos/18.jpg', width: 5712, height: 4284 },
+  { src: '/photos/19.jpg', width: 3926, height: 2794 },
 ]
 
 const schedule = [

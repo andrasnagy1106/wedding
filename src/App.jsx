@@ -569,9 +569,20 @@ export default function App() {
             <GuestGallery />
           </div>
 
+          <div className="photos-selfie-box">
+            <p className="photos-selfie-text">📷 Előzetes fotók a fotóstól:</p>
+            <a
+              className="photos-selfie-link"
+              href="https://zartvilag.smugmug.com/Anna-Andr%C3%A1s-el%C5%91zetes/n-LWTMMk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Előzetes képek megtekintése
+            </a>
+          </div>
           <div className="photos-coming-banner">
             <span>📸</span>
-            <p>A profi fotók és további videók hamarosan érkeznek!</p>
+            <p>A teljes profi fotóanyag és további videók hamarosan érkeznek!</p>
           </div>
           <div className="photos-selfie-box">
             <p className="photos-selfie-text">🤳 Szelfiboxos fotók:</p>

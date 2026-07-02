@@ -570,7 +570,7 @@ export default function App() {
           </div>
 
           <div className="photos-selfie-box">
-            <p className="photos-selfie-text">📷 Fotók a fotóstól:</p>
+            <p className="photos-selfie-text">📷 Profi fotók:</p>
             <a
               className="photos-selfie-link"
               href="https://zartvilag.smugmug.com/Anna-Andr%C3%A1s-2026/n-5PBN6R"

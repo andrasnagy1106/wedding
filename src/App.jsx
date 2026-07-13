@@ -602,6 +602,18 @@ export default function App() {
               Videó megtekintése
             </a>
           </div>
+          <div className="photos-selfie-box">
+            <p className="photos-selfie-text">🎥 Fotós rövid videója:</p>
+            <div className="youtube-embed-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/Tvl2NPXFuxI"
+                title="Fotós rövid videója – Anna & Andris esküvő"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            </div>
+          </div>
           <div className="photos-share">
             <p className="photos-share-text">
               Ha nektek is készültek szép fotók vagy videók az esküvőn,<br />

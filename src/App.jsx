@@ -614,6 +614,18 @@ export default function App() {
               />
             </div>
           </div>
+          <div className="photos-selfie-box">
+            <p className="photos-selfie-text">🎞️ Fotós slideshow – legjobb pillanatok:</p>
+            <div className="youtube-embed-wrapper">
+              <iframe
+                src="https://drive.google.com/file/d/1Tq56UoBf9J2JgSHmSV5qFfyCKI6xWuxh/preview"
+                title="Fotós slideshow – Anna & Andris esküvő"
+                frameBorder="0"
+                allow="autoplay"
+                allowFullScreen
+              />
+            </div>
+          </div>
           <div className="photos-share">
             <p className="photos-share-text">
               Ha nektek is készültek szép fotók vagy videók az esküvőn,<br />

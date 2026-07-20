@@ -626,6 +626,42 @@ export default function App() {
               />
             </div>
           </div>
+          <div className="photos-selfie-box">
+            <p className="photos-selfie-text">🏛️ Polgári szertartás:</p>
+            <div className="youtube-embed-wrapper">
+              <iframe
+                src="https://drive.google.com/file/d/124xfTht0F-pmW04CUorp8Vutcud3cX6H/preview"
+                title="Polgári szertartás – Anna & Andris esküvő"
+                frameBorder="0"
+                allow="autoplay"
+                allowFullScreen
+              />
+            </div>
+          </div>
+          <div className="photos-selfie-box">
+            <p className="photos-selfie-text">⛪ Templomi esküvő:</p>
+            <div className="youtube-embed-wrapper">
+              <iframe
+                src="https://drive.google.com/file/d/1ni32DVTQmQxEtJd9mk9OFTZyqv6MVAcZ/preview"
+                title="Templomi esküvő – Anna & Andris esküvő"
+                frameBorder="0"
+                allow="autoplay"
+                allowFullScreen
+              />
+            </div>
+          </div>
+          <div className="photos-selfie-box">
+            <p className="photos-selfie-text">✨ Wedding highlights:</p>
+            <div className="youtube-embed-wrapper">
+              <iframe
+                src="https://drive.google.com/file/d/1wFuc5gD5obU2qybX_NjfSXEp1nhAEY8p/preview"
+                title="Wedding highlights – Anna & Andris esküvő"
+                frameBorder="0"
+                allow="autoplay"
+                allowFullScreen
+              />
+            </div>
+          </div>
           <div className="photos-share">
             <p className="photos-share-text">
               Ha nektek is készültek szép fotók vagy videók az esküvőn,<br />
